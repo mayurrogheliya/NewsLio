@@ -34,15 +34,6 @@ const News = (props) => {
         updateNews()
     }, [])
 
-    // const handlePrevClick = async () => {
-    //     setPage(page - 1)
-    //     updateNews();
-    // }
-    // const handleNextClick = async () => {
-    //     setPage(page + 1)
-    //     updateNews();
-    // }
-
     const fetchMoreData = async () => {
         const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page + 1}&pageSize=${props.pageSize}`
         setPage(page + 1)
@@ -73,10 +64,6 @@ const News = (props) => {
                     </div>
                 </div>
             </InfiniteScroll>
-            {/* <div className="d-flex justify-content-between">
-                    <button type="button" disabled={page <= 1} className="btn btn-dark" onClick={handlePrevClick}>	&larr; Previous</button>
-                    <button type="button" disabled={page + 1 > Math.ceil(totalResults / props.pageSize)} className="btn btn-dark" onClick={handleNextClick}>Next &rarr;</button>
-                </div> */}
         </div >
     )
 }
