@@ -22,7 +22,7 @@ NewsLio is a news website that fetches and displays the latest news articles fro
 1. **Clone the repository**:
 
    ```sh
-   git clone https://github.com/mayurrogheliya/TextUtils.git
+   git clone https://github.com/mayurrogheliya/NewsLio.git
    ```
 
 2. **Navigate to the project directory:**
