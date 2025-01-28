@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-      <Router basename='NewsLio'>
+      <Router>
         <Navbar />
 
         <LoadingBar
